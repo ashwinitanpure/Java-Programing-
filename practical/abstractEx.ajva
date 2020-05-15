@@ -1,0 +1,27 @@
+abstract class base
+{
+  abstract void area();
+}
+class derived extends base
+{
+  int len,width,height;
+  derived()
+  {
+    len=10;
+    width=20;
+    height=30;
+  }
+ void area()
+  { 
+     System.out.println("abstract example .....");
+     System.out.println("area is  :"+(len*width*height));
+   }
+}
+class abstractEx
+{
+  public static void main(String []args)
+  {
+    derived obj=new derived();
+    obj.area();
+  }
+}
